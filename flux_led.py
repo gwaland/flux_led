@@ -568,7 +568,7 @@ class WifiLedBulb():
 		msg.append(0x00)
 		msg.append(0x00)
 		msg.append(utils.percentToByte(level))
-		msg.append(0x0f)
+		msg.append(0x00)
 		msg.append(0x0f)
 		self.__write(msg)
 		
@@ -581,7 +581,7 @@ class WifiLedBulb():
 		msg.append(g)
 		msg.append(b)
 		msg.append(0x00)
-		msg.append(0xf0)
+		msg.append(0x00)
 		msg.append(0x0f)
 		self.__write(msg)
 
